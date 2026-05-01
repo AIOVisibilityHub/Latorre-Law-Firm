@@ -1,0 +1,48 @@
+name: Build public pages & sitemaps
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'index.html'
+      - 'manifest.json'
+      - 'data/**'
+      - 'build_public_pages.py'
+      - '.github/workflows/build-public-pages.yml'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: build-pages-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build-pages-and-sitemaps:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Build public pages
+        run: python3 build_public_pages.py
+
+      - name: Commit & push generated pages
+        run: |
+          set -e
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+            exit 0
+          fi
+          git commit -m "Auto-generate bilingual public pages"
+          git push
