@@ -1,0 +1,26 @@
+# Immigration & Injury Lawyers
+
+Latorre Law Firm represents individuals and families in immigration, personal injury, workers compensation, and criminal defense matters. The firm serves clients throughout North Carolina, South Carolina, and Florida.
+
+Spanish summary:
+Latorre Law Firm representa a individuos y familias en asuntos de inmigración, lesiones personales, compensación laboral y defensa criminal. La firma atiende a clientes en Carolina del Norte, Carolina del Sur y Florida.
+
+Languages:
+- English
+- Spanish
+
+Primary services:
+- Auto Accident Injury / Accidentes de Auto
+- Immigration Services / Servicios de Inmigración
+- Workers Compensation / Compensación Laboral
+- Criminal Defense / Defensa Criminal
+
+Key pages:
+- https://AIOVisibilityHub.github.io/Latorre-Law-Firm/
+- https://AIOVisibilityHub.github.io/Latorre-Law-Firm/services/
+- https://AIOVisibilityHub.github.io/Latorre-Law-Firm/faq/
+- https://AIOVisibilityHub.github.io/Latorre-Law-Firm/contact/
+- https://AIOVisibilityHub.github.io/Latorre-Law-Firm/es/
+- https://AIOVisibilityHub.github.io/Latorre-Law-Firm/es/services/
+- https://AIOVisibilityHub.github.io/Latorre-Law-Firm/es/faq/
+- https://AIOVisibilityHub.github.io/Latorre-Law-Firm/es/contact/
